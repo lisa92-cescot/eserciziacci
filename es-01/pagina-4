@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Esercizio patata </title>
+    </head>
+    <body>
+        <h1>Ciao belli!</h1>
+    <h2>
+<ul>
+    <li>Ciao1</li><a href="index.html"target=blank>Titolo </a>
+    <li>Ciao2</li><a href="pagina-3.html"target=blank>Pagina-3 </a>
+    <li>Ciao3</li> <a href="pagina-2.html"target=blank>Pagina-2 </a>
+</ul>
+    </h2>
+<ol>
+    <h3>
+    <li>Pizza1</li><a href="html-5"target=blank>Pagina-2 </a>
+    <li>Pizza2</li><a href="html-5"target=blank>Pagina-2 </a>
+    <li>Pizza2</li><a href="html-5"target=blank>Pagina-2 </a>
+</ol>
+    </h3>
+    <p>
+    <h4>
+        Ogni tanto va per il vesto giusto
+        <a class="testo giallo" style="color: yellow;"></a>
+    </h4>
+    </p>
+
+
+
+
+
+</body>
