@@ -3,8 +3,51 @@
 span {
     color: red;
 }
-span.classe-1  {
+
+/* Es 2 -Colora di rosso tutti gli elementi di tipo SPAN */
+
+
+p span {
+    color: blue;
+}
+
+/* Es 3 -Colora di verde il primo span con classe-1 che trovi nel documento*/
+div#sezione-1 > p.classe-1 > span.classe-1  {
     color: green;
 }
 
-/* Es 2 -Colora di rosso tutti gli elementi di tipo SPAN */
+/* Es 4 -Colora di viola l'ultimo paragrafo con classe-1*/
+
+div.sezione-2 .classe-1{
+    color: purple;
+}
+
+
+/* Es 5 colora di giallo il link al passaggio del mouse*/
+
+a:hover {
+    color: yellow;
+}
+
+/* Es 6 colora di rosa il primo paragrafo con classe-2 passaggio del mouse*/
+
+div#sezione-1 > p.classe-2:hover {
+    color: pink;
+
+    /* va bene anche p.classe-2:hober color pink*/
+}
+
+
+/* Es 7 colora di arancione il primo paragrafo di sezione 2*/
+
+/*.sezione-2 > p:not(.classe-1) {
+    color: orange;
+} */
+
+.sezione-2 >p:first-child {
+    color: orange;
+}
+
+.sezione-2 > :nth-child(2n+1) {
+    color: orange;
+}
