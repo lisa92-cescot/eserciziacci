@@ -23,3 +23,8 @@ a.testo-rosso{
 a.testo-rosso.testo-marrone {
 color:darkred
 }
+
+/*Tutti gli elementi di tipo A racchiusi all'interno di un paragrafo con classe "testo-principale*/
+.testo-principale a {
+color: yellow;
+}
