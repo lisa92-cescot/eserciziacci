@@ -1,0 +1,13 @@
+/*tutti i paragrafi colorati di blu*/
+p{
+    color:blue;
+}
+
+
+.testo-rosso{
+    color: red;
+}
+
+#sezione-2 {
+    color: purple;
+}
