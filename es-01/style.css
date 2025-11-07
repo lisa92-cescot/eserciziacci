@@ -35,5 +35,18 @@ p > * {
     color: green;
 }
 
-/*Seleziona l'elemento
+/*Seleziona l'elemento di tipo A su cui l'utente ha il mouse
 */
+a:hover {
+    color:white
+}
+
+/*Seleziona gli elementi che NON hanno classe "io-no"
+*/
+:not(.io-no) {
+    color: blue;
+}
+
+/*Selezione dei figli */
+
+/*vedi file di Andrea cssfrontend*/
