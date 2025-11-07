@@ -1,0 +1,10 @@
+/* Es 1 -Colora di rosso tutti gli elementi di tipo SPAN */
+
+span {
+    color: red;
+}
+span.classe-1  {
+    color: green;
+}
+
+/* Es 2 -Colora di rosso tutti gli elementi di tipo SPAN */
