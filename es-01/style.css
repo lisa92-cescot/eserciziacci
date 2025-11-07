@@ -28,3 +28,9 @@ color:darkred
 .testo-principale a {
 color: yellow;
 }
+
+/*Tutti gli elementi figli di un paragrafo
+*/
+p > * {
+    color: green;
+}
