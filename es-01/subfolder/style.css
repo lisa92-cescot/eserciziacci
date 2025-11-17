@@ -95,6 +95,9 @@ div#spazi {
         margin-left: 30px;
     padding: 30px;
     border: 10px tomato solid;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #111111;
 }
 div#spazi-2 {background-color: darkblue;}
 h1{ margin-bottom: 50px;}
