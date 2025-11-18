@@ -69,5 +69,26 @@ else:
     echo "Condizione falsa";
 endif;
 
+$persona_1 = array (
+    "nome" => "Luca",
+    "cognome" => "Rossi",
+    "telefono" => ""
+);
+
+$persona_2 = array (
+    "nome" => "Lorenza",
+    "cognome" => "Verdi"
+);
+
+if ($persona_1["telefono"] !=""):
+echo "Tel: ";
+echo $persona_1["telefono"];
+endif;
+
+if (array_key_exists("telefono", $persona_2) && $persona_2 ["telefono"] !=""):
+echo "Tel": ";
+echo $persona_2 ["telefono"];
+endif;
+
 
 ?>

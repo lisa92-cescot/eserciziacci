@@ -48,10 +48,26 @@ $d = 145
 <?php 
 
 $voto = 6;
+$giudizio = false;
 
-?>
-<div>
-    <h2>Esercizio 4 </h2>
-    <h3>
-    <p>
-        <?php
+    if ($voto <=5) {
+        $giudizio = 'insufficiente';
+    }
+    elseif ($voto == 6) {
+        $giudizio = 'sufficiente';
+    }
+    elseif ($voto == 7 or $voto == 8) {
+        $giudizio = 'buono';
+    }
+    elseif ($voto == 9) {
+        $giudizio = 'ottimo';
+    }
+    elseif ($voto == 10) {
+        $giudizio = 'eccellente';
+    }
+
+    echo $giudizio;
+    
+    ?>
+    <div>
+        <h2>Esercizio 5 <h2>
