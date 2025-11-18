@@ -71,3 +71,7 @@ $giudizio = false;
     ?>
     <div>
         <h2>Esercizio 5 <h2>
+        <p>Il giudizio è: <?php echo $giudizio; ?></p>
+    </div>
+    
+    <?php
