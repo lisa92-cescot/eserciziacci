@@ -1,0 +1,57 @@
+<?php
+
+$a = 12;
+$b = 24;
+
+$somma =  $a + $b;
+$differenza = $a - $b;
+$moltiplicazione = $a * $b;
+$divisione = $a / $b;
+
+?>
+    <div>
+        <h2>Esercizio 1</h2>
+        <ul>
+            <li><strong>Somma:</</strong> <?php echo $somma; ?><li>
+            <li><strong>differenza:</</strong> <?php echo $differenza; ?><li>
+            <li><strong>moltiplicazione:</</strong> <?php echo $moltiplicazione; ?><li>
+            <li><strong>divisione:</</strong> <?php echo $divisione; ?><li>
+        </ul>
+    </div>
+<?php
+
+$parola = "albero";
+
+if ($parola == "casa") {
+    echo "La parola è \"Casa\"";
+} else {
+    echo "La parola è diversa da \"Casa\"";
+}
+
+$c = "145";
+$d = 145
+
+?>
+<div>
+    <h2>Esercizio 3 </h2>
+    <h3>Uguaglianza per valore </h3>
+    <p>
+        <?php
+        if ($c === $d) {
+            echo "C è uguale a D";
+        } else {
+            echo "C è diverso da D";
+        }
+        ?>
+    </p>
+    </div>
+<?php 
+
+$voto = 6;
+
+?>
+<div>
+    <h2>Esercizio 4 </h2>
+    <h3>
+    <p>
+        <?php
