@@ -116,11 +116,17 @@
      br();
      echo --$i;
      br();
-    
-     $settimana = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"];
 
-     for ($i = 0; $i < count ($settimana); $i++) :
-        switch ($settimana[$i]):
+      // sunday 3, August 2025
+        function formatta_data($data) {
+            $parti = explode(" ", $data);
+
+        }
+
+        function traduci_giorno_settimana($giorno) {
+            switch(strtolower($giorno)):
+        }
+
             case "monday" :
                 echo "Lunedì";
                 break;
@@ -141,8 +147,95 @@
                 break;
                 case "sunday" :
                 echo "Domenica";
+                break;
+            default:
+                    echo "Giorno non valido";
             endswitch;
-        endfor
+        endfor;
+
+        function traduci_mese($mese) {
+            switch(strtolower($mese)):
+                case "january" :
+                echo "Gennaio";
+                break;
+                case "febryary" :
+                echo "Febbraio";
+                break;
+                case "march" :
+                echo "Marzo";
+                break;
+                case "april" :
+                echo "Aprile";
+                break;
+                case "friday" :
+                echo "Venerdì";
+                break;
+                case "saturday" :
+                echo "Sabato";
+                break;
+                case "sunday" :
+                echo "Domenica";
+                break;
+            default:
+                    echo "Giorno non valido";
+            endswitch;
+        endfor;
+        }
+
+        $studenti = [
+    array(
+        "nome" => "Mario",
+        "eta"  => 19
+        "voti" => [3, 7, 6, 10]
+    ),
+    array(
+        "nome" => "Lucia",
+        "eta"  => 14
+        "voti" => [8, 7, 6, 10]
+    ),
+    array(
+        "nome" => "Rosa",
+        "eta"  => 21
+        "voti" => [2, 7, 6, 8]
+    ),
+    array(
+        "nome" => "Francesco",
+        "eta"  => 24
+        "voti" => [6, 7, 9, 5]
+    ),
+    array(
+        "nome" => "Giuseppe",
+        "eta"  => 16
+        "voti" => [3, 8, 6, 9]
+    ),
+    array(
+        "nome" => "Marta",
+        "eta"  => 22
+        "voti" => [6, 5, 6, 7]
+    )
+];
+    function calcola_media ($voti) {
+        $somma =0;
+        for ($i = 0; $i < count($voti); $i++) :
+            $somma += $voti [$i];
+        endfor;
+
+        $media = $somma / count($voti);
+        return $media;
+    }
+        foreach ($studenti as $studente) :
+            $media = calcola_media ($studente ['voti']);
+            echo $studente ['nome'] . " ha una media di " .$media;
+            if ($media >=6) :
+                echo "Promosso.";
+            else:
+                echo "Bocciato.";
+            endif;
+            br()
+        endforeach;
+
+
+       
             
 
    
