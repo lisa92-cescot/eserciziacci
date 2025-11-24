@@ -117,6 +117,33 @@
      echo --$i;
      br();
     
+     $settimana = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"];
+
+     for ($i = 0; $i < count ($settimana); $i++) :
+        switch ($settimana[$i]):
+            case "monday" :
+                echo "Lunedì";
+                break;
+                case "tuesday" :
+                echo "Martedì";
+                break;
+                case "wednesday" :
+                echo "Mercoledì";
+                break;
+                case "thursday" :
+                echo "Giovedì";
+                break;
+                case "friday" :
+                echo "Venerdì";
+                break;
+                case "saturday" :
+                echo "Sabato";
+                break;
+                case "sunday" :
+                echo "Domenica";
+            endswitch;
+        endfor
+            
 
    
 
