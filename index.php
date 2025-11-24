@@ -96,11 +96,14 @@
     endfor;
     
 
-    if($trovato) {
+    if($trovato) :
         echo$numero . " è presente nell'array (" . $i . "iterazioni)";
-    } else {
+     else :
         echo $numero . "non è presente nell'array (" . $i . "iterazioni)";
-    }
+     endif;
+
+     
+    
 
    
 
