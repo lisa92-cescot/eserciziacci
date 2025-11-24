@@ -46,7 +46,7 @@ endwhile;
 
     <?php
     echo"<br>";
-    $persone = {
+    $persone = [
         array(
             "nome" => "Mario",
             "età" => 19
@@ -71,7 +71,7 @@ endwhile;
             "nome" => "Marta",
             "età" => 22
         ),
-    }
+    ];
 
     $anni = 0;
 
