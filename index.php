@@ -78,17 +78,30 @@
 
     $trovato = false;
 
-    whilr (!$trovato) :
+    $i = 0;
+    while (!$trovato) :
         if($valori [$ì] == $numero) :
             $trovato = true;
         endif;
         $si++;
     endwhile;
 
-    //$somma= $somma + $voti[0];
-    //$num_voti = 1;
+    /**
+     * Ciclo for equivalente
+     **/
+     for ($i = 0; !$trovato && $i < count($valori); $i++) :
+        if ($valori [$i] == $numero) :
+            $trovato = true;
+        endif;
+    endfor;
+    
 
-    //$somma = $somma + $voti [1];
-    //$num_voti = 2;*// 
+    if($trovato) {
+        echo$numero . " è presente nell'array (" . $i . "iterazioni)";
+    } else {
+        echo $numero . "non è presente nell'array (" . $i . "iterazioni)";
+    }
+
+   
 
 ?>
