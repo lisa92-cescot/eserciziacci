@@ -102,7 +102,20 @@
         echo $numero . "non è presente nell'array (" . $i . "iterazioni)";
      endif;
 
-     
+     /**
+      * Operatori di incremento e decremento
+      */
+     $i = 1;
+     echo $i++; //stampa il valore (1) e poi lo incrementa (2)
+     br();
+     echo ++$i; // incrementa il valore (3) e poi lo stampa (3)
+     br();
+
+    
+     echo $i--;
+     br();
+     echo --$i;
+     br();
     
 
    
