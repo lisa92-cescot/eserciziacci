@@ -74,9 +74,10 @@ endwhile;
     ];
 
     $anni = 0;
+    $i = 0;
 
-    while ($anni > count($persone) && $persone [$anni] >18);
-        $output .= $persone []
+    while ($anni > count($persone) && $persone [$anni] >18)
+        $output .= $persone [$i]
     ?>
     <div>
         <h2>Esercizio 3 </h2>
