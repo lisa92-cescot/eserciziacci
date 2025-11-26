@@ -58,5 +58,50 @@ console.log(a * b); //Moltiplicazione
 console.log(a / b); //Divisione
 console.log(a % b); //Modulo
 
+
+a = 1;
 console.log(a++); // Leggo e poi Incremento
 console.log(++a); // Incremento e poi leggo
+
+//Operatori logici
+console.log(a < b);
+console.log(a <= b);
+console.log (!(a == 3)); //Uguaglianza
+console.log (!(a == "3")); //Uguaglianza per valore
+console.log (!(a === 3)); //Uguaglianza per valore e tipo
+
+console.log(!(a<b)); //NOT
+console.log(a == 3 && b == 1); //AND
+console.log(a == 3 || b == 1); //OR
+
+//Concatenazione
+console.log(stringa1 + stringa2);
+
+a =2;
+b =3;
+c = "1";
+var somma = a + c;
+
+console.log(a + b); // Somma
+console.log(a + c); // Concatenazione
+console.log(somma + b); // 213
+console.log/(somma > 20); //Somma viene convertita in numero
+console.log(somma.lenght); //2 -> Lunghezza della stringa
+console.log(a + b + c); // 51
+
+var d;
+console.log(d); //
+d = undefined;
+
+var e = null;
+console.log(e); //null
+
+var oggetto = {
+    "nullo": null,
+    "undefined": undefined
+};
+console.log(oggetto); 
+console.log(d == true); //Falso!
+console.log(e == true); // Falso!
+console.log(d == e); //Entrambi falsi -> true
+console.log(d === e) // Null è diverso da undefined
