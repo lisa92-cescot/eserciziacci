@@ -224,3 +224,10 @@ for (valore of array) {
 for (chiave in oggetto) {
     console.log(oggetto[chiave]);
 }
+
+var clickMeButton = document.getElementById("click-me-button");
+
+clickMeButton.addEventListener = ('mouseover', function() {
+    clickMeButton.style.left = Math.random() * 100 + "%";
+    clickMeButton.style.marginTop = Math.random() * 100 + "%";
+})
