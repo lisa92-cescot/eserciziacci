@@ -1,16 +1,17 @@
-function esercizio01(){
-    let numeroInserito = window.prompt("Inserisci un numero da 1 a 10");
-    let numeroDaTrovare = 5;
+/* Esercizio 1 */
+function esercizio01() {
 
-    while(numeroInserito != numeroDaTrovare){
+    let numeroInserito = window.prompt("Inserisci un numero da 0 a 10:");
+    let numeroDaTrovare = Math.ceil(Math.random() * 10);
+    
+    while (numeroInserito != numeroDaTrovare) {
         numeroInserito = window.prompt("Sbagliato, riprova!");
     }
 
-    document.getElementById('es1-numeroScelto').innerText = numeroDaTrovare;
-    document.getElementById('es1-risultato').innerText = "Congratulazioni!";
-  
-
+    document.getElementById('es1-numeroScelto').innerText = "Il numero era " + numeroDaTrovare + "!";
+    document.getElementById("es1-risultato").innerText = "Congratulazioni!";
 }
+
 function esercizio02() {
     let numeroInserito = window.prompt("Inserisci un numero da 1 a 10:");
 

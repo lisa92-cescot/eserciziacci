@@ -184,28 +184,29 @@ console.log(lista.getElementsByClassName('figlio')); // 0 figli
 var voti = [4, 6, 7, 8, 6, 8];
 var somma = 0;
 for (let i = 0; i < voti.length; i++) {
-    somma += voti [i];
+    somma += voti[i];
 }
 console.log("Media = " + (somma / voti.length));
 
 var numero = window.prompt("Inserisci un numero");
 
-var elementi = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+var elementi = [1, 2, 3, 4, 6, 7, 8, 9];
 
 let i = 0;
 let trovato = false;
 
-while (!trovato && i < elementi.lenght){
-    if (numero == elementi[i])  {
+while (!trovato && i < elementi.length) {
+    if (elementi[i] == numero) {
         trovato = true;
+    }
+    i++;
 }
-i++;
-}
+
 if (trovato) {
-    console.log("Numero trovato");
+    console.log("Elemento trovato");
 } else {
     console.log("Elemento non trovato");
-} 
+}
 
 var array = [1, 2, 3, 4, 5];
 var oggetto = {
