@@ -206,3 +206,20 @@ if (trovato) {
 } else {
     console.log("Elemento non trovato");
 } 
+
+var array = [1, 2, 3, 4, 5];
+var oggetto = {
+    nome: "Luca",
+    cognome: "Rossi",
+    chiave: "chiave!"
+};
+
+// Ciclo for of
+for (valore of array) {
+    console.log(valore);
+} 
+
+// Ciclo for in
+for (chiave in oggetto) {
+    console.log(oggetto[chiave]);
+}
